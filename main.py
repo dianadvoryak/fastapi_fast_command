@@ -1,12 +1,10 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from db import db as db_router
-from auth_login import auth_login
+from src.api import main_router
 
 app = FastAPI()
 
-app.include_router(db_router)
-app.include_router(auth_login)
+app.include_router(main_router)
 
 @app.get("/")
 def read_root():
