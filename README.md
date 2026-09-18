@@ -7,3 +7,6 @@ pip install fastapi\[all\]
 pip install aiosqlite sqlalchemy  
 pip install greenlet  
 pip install authx  
+
+endpoints:
+<img src="./src/img/docs.png">
